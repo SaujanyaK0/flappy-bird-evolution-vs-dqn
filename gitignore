@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Training artifacts (keep your best model by adding an exception below)
+runs/
+logs/
+*.log
+models/*.pth
+models/*.pt
+!models/best.pth
+
+# Jupyter
+.ipynb_checkpoints/
