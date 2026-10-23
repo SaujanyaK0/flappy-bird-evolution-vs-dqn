@@ -2,7 +2,7 @@
 
 A hands-on learning project: build Flappy Bird from scratch in Python, then teach an AI to play it using two different approaches, **neuroevolution (genetic algorithm)** and **Deep Q-Learning (DQN)**, with everything trained locally.
 
-The focus is on *understanding* how these algorithms work, so the game environment, networks, and training loops are written by hand rather than pulled from a pre-trained model or an existing RL framework.
+The focus is on _understanding_ how these algorithms work, so the game environment, networks, and training loops are written by hand rather than pulled from a pre-trained model or an existing RL framework.
 
 ## Goals
 
@@ -15,19 +15,19 @@ The focus is on *understanding* how these algorithms work, so the game environme
 
 ## Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| Python 3.13 | Core language |
-| Pygame | Game, rendering, and visualization |
-| NumPy | Numerical work and the genetic algorithm |
-| PyTorch | Neural networks and DQN training |
-| Git | Version control |
+| Tool        | Purpose                                  |
+| ----------- | ---------------------------------------- |
+| Python 3.13 | Core language                            |
+| Pygame      | Game, rendering, and visualization       |
+| NumPy       | Numerical work and the genetic algorithm |
+| PyTorch     | Neural networks and DQN training         |
+| Git         | Version control                          |
 
 ## Getting Started
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/ai-flappy-bird.git
+git clone https://github.com/SaujanyaK0/ai-flappy-bird.git
 cd ai-flappy-bird
 
 # Create and activate a virtual environment (Windows)
@@ -72,17 +72,19 @@ This is the planned layout and will evolve as the project grows.
 
 **Actions (outputs)**
 
-| Action | Meaning |
-|--------|---------|
-| `0` | Do nothing |
-| `1` | Flap |
+| Action | Meaning    |
+| ------ | ---------- |
+| `0`    | Do nothing |
+| `1`    | Flap       |
 
 ## Approaches
 
 ### 1. Genetic Algorithm
+
 A population of networks plays the game at the same time. Each network's weights are treated as a genome. The best performers are selected, combined through crossover, and mutated to form the next generation. No gradients are needed.
 
 ### 2. Deep Q-Network (DQN)
+
 A single agent observes the state, picks an action, and receives a reward. Experiences are stored in a replay buffer and sampled to train a Q-network with gradient descent, using a target network for stability.
 
 ## Roadmap
